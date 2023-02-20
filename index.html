@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230220082631">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 		<!-- Начало: Данный блок удалять нельзя -->
@@ -76,7 +78,619 @@
 		<!-- Конец -->
 
 		<div class="main">
-			В данном блоке размещается верстка
+			<div class="wrapper">
+				<header class="header">
+					<div class="header__container">
+						<div class="header__body body-header">
+							<a href="#" class="body-header__logo">
+								<picture><source srcset="img/logo-header.webp" type="image/webp"><img src="img/logo-header.png" alt="Логотип пантеон"></picture>
+							</a>
+							<div class="header__menu menu">
+								<nav class="menu__body menu__body_header">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+										<li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
+										<li class="menu__item"><a href="#season" class="menu__link">Абонементы</a></li>
+										<li class="menu__item"><a href="#coach" class="menu__link">Тренеры</a></li>
+										<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+									</ul>
+								</nav>
+								<button type="button" class="icon-menu menu__header"><span></span></button>
+							</div>
+							<div data-da=".menu__body, 768" class="header__contacts">
+								<a href="tel:+74964161916" class="header__phone">+7 (496) 416-19-16</a>
+							</div>
+	
+						</div>
+					</div>
+				</header>
+				<main class="page">
+					<section class="page__main main-page">
+						<div class="main-page__container">
+							<div class="main-page__body body-main">
+								<h1 class="body-main__title">Фитнес клуб Пантеон</h1>
+								<div class="body-main__subtitle">Лучше нас только боги</div>
+								<a href="#" class="body-main__btn btn">
+									<div class="btn__body">
+										<span>Получить консультацию</span>
+									</div>
+								</a>
+							</div>
+							<div class="main-page__footer">
+								<a href="#" data-goto-speed="1000" data-goto=".page__about" class="main-page__scroll scroll">
+									<img src="img/icons/arrow-down.svg" alt="Скролл вниз">
+								</a>
+								<ul class="main-page__social social">
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<img src="img/icons/inst.svg" alt="инстаграм">
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<img src="img/icons/vk.svg" alt="вк">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<picture><source srcset="img/main-bg.webp" type="image/webp"><img src="img/main-bg.jpg" class="main-page__bg" alt="bg"></picture>
+					</section>
+					<!--  -->
+					<section id="about" class="page__about about-page">
+						<div class="about-page__container about-page__container_md">
+							<div class="about-page__body body-about">
+								<div class="body-about__images images-about">
+									<div class="images-about__img">
+										<picture><source srcset="img/about-img1.webp" type="image/webp"><img src="img/about-img1.jpg" alt="img"></picture>
+									</div>
+									<div class="images-about__img">
+										<picture><source srcset="img/about-img2.webp" type="image/webp"><img src="img/about-img2.jpg" alt="img2"></picture>
+									</div>
+								</div>
+								<div class="body-about__content">
+									<h2 class="body-about__title title">Новый образ жизни</h2>
+									<div class="body-about__text">Став частью нашей команды, вы сможете изменить привычный ритм жизни и сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего тела на 100%.</div>
+									<a href="#" class="body-about__btn btn">
+										<div class="btn__body">
+											<span>Получить консультацию</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="about-page__advantage advantage-about">
+							<div class="advantage-about__container">
+								<div class="advantage-about__items">
+									<div class="advantage-about__item">
+										<div class="advantage-about__img">
+											<img src="img/icons/stationary-bike.svg" alt="bike">
+										</div>
+										<div class="advantage-about__text">Полностью укомплектованный зал</div>
+									</div>
+									<div class="advantage-about__item">
+										<div class="advantage-about__img">
+											<img src="img/icons/dumbbell.svg" alt="dumbbell">
+										</div>
+										<div class="advantage-about__text">Профессиональное оборудование</div>
+									</div>
+									<div class="advantage-about__item">
+										<div class="advantage-about__img">
+											<img src="img/icons/locat.svg" alt="locat">
+										</div>
+										<div class="advantage-about__text">Удобное расположение в центре города</div>
+									</div>
+									<div class="advantage-about__item">
+										<div class="advantage-about__img">
+											<img src="img/icons/wallet.svg" alt="wallet">
+										</div>
+										<div class="advantage-about__text">Доступная стоимость занятий</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!--  -->
+					<section id="gallery" class="page__gallery gallery-page">
+						<div class="gallery-page__container">
+							<div class="gallery-page__body">
+								<h2 class="gallery-page__title title">Галерея</h2>
+								<div class="gallery-page__container gallery-page__container_md">
+									<div class="gallery-page__slider gallery-page__slider_one swiper">
+										<div class="gallery-page__wrapper swiper-wrapper">
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1.webp" type="image/webp"><img src="img/galery1.jpg" alt="1"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery2.webp" type="image/webp"><img src="img/galery2.jpg" alt="2"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery3.webp" type="image/webp"><img src="img/galery3.jpg" alt="3"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery4.webp" type="image/webp"><img src="img/galery4.jpg" alt="4"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1.webp" type="image/webp"><img src="img/galery1.jpg" alt="5"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery2.webp" type="image/webp"><img src="img/galery2.jpg" alt="6"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery3.webp" type="image/webp"><img src="img/galery3.jpg" alt="7"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery4.webp" type="image/webp"><img src="img/galery4.jpg" alt="8"></picture>
+												</div>
+											</div>
+										</div>
+										<div class="gallery-page__btn">
+											<div class="gallery-page__one-btn swiper-button-prev">
+												<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M23.375 8.00005C23.375 7.78456 23.2894 7.5779 23.137 7.42553C22.9846 7.27315 22.778 7.18755 22.5625 7.18755H3.39886L8.51274 2.0753C8.58828 1.99976 8.6482 1.91007 8.68909 1.81137C8.72997 1.71267 8.75101 1.60688 8.75101 1.50005C8.75101 1.39322 8.72997 1.28743 8.68909 1.18873C8.6482 1.09003 8.58828 1.00034 8.51274 0.9248C8.43719 0.849257 8.34751 0.789333 8.24881 0.74845C8.15011 0.707566 8.04432 0.686523 7.93749 0.686523C7.83065 0.686523 7.72487 0.707566 7.62616 0.74845C7.52746 0.789333 7.43778 0.849257 7.36224 0.9248L0.862238 7.4248C0.786572 7.50027 0.72654 7.58994 0.68558 7.68865C0.644619 7.78736 0.623535 7.89318 0.623535 8.00005C0.623535 8.10692 0.644619 8.21274 0.68558 8.31145C0.72654 8.41017 0.786572 8.49983 0.862238 8.5753L7.36224 15.0753C7.43778 15.1508 7.52746 15.2108 7.62616 15.2517C7.72487 15.2925 7.83065 15.3136 7.93749 15.3136C8.04432 15.3136 8.15011 15.2925 8.24881 15.2517C8.34751 15.2108 8.43719 15.1508 8.51274 15.0753C8.58828 14.9998 8.6482 14.9101 8.68909 14.8114C8.72997 14.7127 8.75101 14.6069 8.75101 14.5001C8.75101 14.3932 8.72997 14.2874 8.68909 14.1887C8.6482 14.09 8.58828 14.0003 8.51274 13.9248L3.39886 8.81255H22.5625C22.778 8.81255 22.9846 8.72695 23.137 8.57458C23.2894 8.4222 23.375 8.21554 23.375 8.00005Z" fill="white" />
+												</svg>
+											</div>
+											<div class="gallery-page__one-btn swiper-button-next">
+												<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.625013 7.99995C0.625013 8.21544 0.710615 8.4221 0.862988 8.57447C1.01536 8.72685 1.22202 8.81245 1.43751 8.81245L20.6011 8.81245L15.4873 13.9247C15.4117 14.0002 15.3518 14.0899 15.3109 14.1886C15.27 14.2873 15.249 14.3931 15.249 14.5C15.249 14.6068 15.27 14.7126 15.3109 14.8113C15.3518 14.91 15.4117 14.9997 15.4873 15.0752C15.5628 15.1507 15.6525 15.2107 15.7512 15.2516C15.8499 15.2924 15.9557 15.3135 16.0625 15.3135C16.1693 15.3135 16.2751 15.2924 16.3738 15.2516C16.4725 15.2107 16.5622 15.1507 16.6378 15.0752L23.1378 8.5752C23.2134 8.49973 23.2735 8.41006 23.3144 8.31135C23.3554 8.21264 23.3765 8.10682 23.3765 7.99995C23.3765 7.89308 23.3554 7.78726 23.3144 7.68855C23.2735 7.58983 23.2134 7.50017 23.1378 7.4247L16.6378 0.924699C16.5622 0.849155 16.4725 0.789231 16.3738 0.748348C16.2751 0.707464 16.1693 0.686422 16.0625 0.686422C15.9557 0.686422 15.8499 0.707464 15.7512 0.748348C15.6525 0.789231 15.5628 0.849155 15.4873 0.924699C15.4117 1.00024 15.3518 1.08992 15.3109 1.18863C15.27 1.28733 15.249 1.39312 15.249 1.49995C15.249 1.60678 15.27 1.71257 15.3109 1.81127C15.3518 1.90997 15.4117 1.99966 15.4873 2.0752L20.6011 7.18745L1.43751 7.18745C1.22202 7.18745 1.01536 7.27305 0.862988 7.42542C0.710615 7.5778 0.625013 7.78446 0.625013 7.99995Z" fill="white" />
+												</svg>
+											</div>
+										</div>
+										<div class="gallery-page__scrollbar swiper-scrollbar"></div>
+									</div>
+									<div class="gallery-page__slider gallery-page__slider_two swiper">
+										<div class="gallery-page__wrapper swiper-wrapper">
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-1.webp" type="image/webp"><img src="img/galery1-1.jpg" alt="1"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-2.webp" type="image/webp"><img src="img/galery1-2.jpg" alt="2"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-1.webp" type="image/webp"><img src="img/galery1-1.jpg" alt="3"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-2.webp" type="image/webp"><img src="img/galery1-2.jpg" alt="4"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-1.webp" type="image/webp"><img src="img/galery1-1.jpg" alt="5"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-2.webp" type="image/webp"><img src="img/galery1-2.jpg" alt="6"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-1.webp" type="image/webp"><img src="img/galery1-1.jpg" alt="7"></picture>
+												</div>
+											</div>
+											<div class="gallery-page__slide swiper-slide">
+												<div class="swiper-slide__img">
+													<picture><source srcset="img/galery1-2.webp" type="image/webp"><img src="img/galery1-2.jpg" alt="8"></picture>
+												</div>
+											</div>
+										</div>
+										<div class="gallery-page__btn">
+											<div class="gallery-page__two-btn swiper-button-prev">
+												<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M23.375 8.00005C23.375 7.78456 23.2894 7.5779 23.137 7.42553C22.9846 7.27315 22.778 7.18755 22.5625 7.18755H3.39886L8.51274 2.0753C8.58828 1.99976 8.6482 1.91007 8.68909 1.81137C8.72997 1.71267 8.75101 1.60688 8.75101 1.50005C8.75101 1.39322 8.72997 1.28743 8.68909 1.18873C8.6482 1.09003 8.58828 1.00034 8.51274 0.9248C8.43719 0.849257 8.34751 0.789333 8.24881 0.74845C8.15011 0.707566 8.04432 0.686523 7.93749 0.686523C7.83065 0.686523 7.72487 0.707566 7.62616 0.74845C7.52746 0.789333 7.43778 0.849257 7.36224 0.9248L0.862238 7.4248C0.786572 7.50027 0.72654 7.58994 0.68558 7.68865C0.644619 7.78736 0.623535 7.89318 0.623535 8.00005C0.623535 8.10692 0.644619 8.21274 0.68558 8.31145C0.72654 8.41017 0.786572 8.49983 0.862238 8.5753L7.36224 15.0753C7.43778 15.1508 7.52746 15.2108 7.62616 15.2517C7.72487 15.2925 7.83065 15.3136 7.93749 15.3136C8.04432 15.3136 8.15011 15.2925 8.24881 15.2517C8.34751 15.2108 8.43719 15.1508 8.51274 15.0753C8.58828 14.9998 8.6482 14.9101 8.68909 14.8114C8.72997 14.7127 8.75101 14.6069 8.75101 14.5001C8.75101 14.3932 8.72997 14.2874 8.68909 14.1887C8.6482 14.09 8.58828 14.0003 8.51274 13.9248L3.39886 8.81255H22.5625C22.778 8.81255 22.9846 8.72695 23.137 8.57458C23.2894 8.4222 23.375 8.21554 23.375 8.00005Z" fill="white" />
+												</svg>
+											</div>
+											<div class="gallery-page__two-btn swiper-button-next">
+												<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.625013 7.99995C0.625013 8.21544 0.710615 8.4221 0.862988 8.57447C1.01536 8.72685 1.22202 8.81245 1.43751 8.81245L20.6011 8.81245L15.4873 13.9247C15.4117 14.0002 15.3518 14.0899 15.3109 14.1886C15.27 14.2873 15.249 14.3931 15.249 14.5C15.249 14.6068 15.27 14.7126 15.3109 14.8113C15.3518 14.91 15.4117 14.9997 15.4873 15.0752C15.5628 15.1507 15.6525 15.2107 15.7512 15.2516C15.8499 15.2924 15.9557 15.3135 16.0625 15.3135C16.1693 15.3135 16.2751 15.2924 16.3738 15.2516C16.4725 15.2107 16.5622 15.1507 16.6378 15.0752L23.1378 8.5752C23.2134 8.49973 23.2735 8.41006 23.3144 8.31135C23.3554 8.21264 23.3765 8.10682 23.3765 7.99995C23.3765 7.89308 23.3554 7.78726 23.3144 7.68855C23.2735 7.58983 23.2134 7.50017 23.1378 7.4247L16.6378 0.924699C16.5622 0.849155 16.4725 0.789231 16.3738 0.748348C16.2751 0.707464 16.1693 0.686422 16.0625 0.686422C15.9557 0.686422 15.8499 0.707464 15.7512 0.748348C15.6525 0.789231 15.5628 0.849155 15.4873 0.924699C15.4117 1.00024 15.3518 1.08992 15.3109 1.18863C15.27 1.28733 15.249 1.39312 15.249 1.49995C15.249 1.60678 15.27 1.71257 15.3109 1.81127C15.3518 1.90997 15.4117 1.99966 15.4873 2.0752L20.6011 7.18745L1.43751 7.18745C1.22202 7.18745 1.01536 7.27305 0.862988 7.42542C0.710615 7.5778 0.625013 7.78446 0.625013 7.99995Z" fill="white" />
+												</svg>
+	
+											</div>
+										</div>
+										<div class="gallery-page__scrollbar swiper-scrollbar"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!--  -->
+					<section id="season" class="page__season season-page">
+						<div class="season-page__container season-page__container_sm">
+							<div data-simplebar class="season-page__body season-page__body_ov">
+								<h2 class="season-page__title title">Абонементы</h2>
+								<table class="season-page__table table-season">
+									<thead class="table-season__head">
+										<tr>
+											<th class="table-season__th table-season__th_nobold">Кол-во занятий</th>
+											<th class="table-season__th">1 тренировка</th>
+											<th class="table-season__th">4 тренировки</th>
+											<th class="table-season__th">8 тренировок</th>
+											<th class="table-season__th">12 тренировок</th>
+										</tr>
+									</thead>
+									<tbody class="table-season__body body-table">
+										<tr>
+											<td class="body-table__title">Персональный тренинг
+												с инструктором</td>
+											<td class="body-table__item">700 руб.</td>
+											<td class="body-table__item">2600 руб.
+												(действителен в течении 3 недель)</td>
+											<td class="body-table__item">5200 руб.
+												(действителен в
+												течении 6 недель)</td>
+											<td class="body-table__item">7200 руб.
+												(действителен в
+												течении 10 недель)</td>
+										</tr>
+										<tr>
+											<td class="body-table__title">Самостоятельные тренировки
+												в тренажерном зале</td>
+											<td class="body-table__item">250 руб.</td>
+											<td class="body-table__item">—</td>
+											<td class="body-table__item">1500 руб.
+												(действителен в течении 30 дней)</td>
+											<td class="body-table__item">2000 руб.
+												(действителен в
+												течении 30 дней)</td>
+										</tr>
+										<tr>
+											<td class="body-table__title">Зал групповых программ</td>
+											<td class="body-table__item">300 руб.</td>
+											<td class="body-table__item">—</td>
+											<td class="body-table__item">2000 руб.
+												(действителен в
+												течении 30 дней</td>
+											<td class="body-table__item">2750 руб.
+												(действителен в течении 45 дней)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div data-simplebar class="season-page__body season-page__body_ov">
+								<h2 class="season-page__subtitle title">Абонемент по времени</h2>
+								<table class="season-page__table table-season">
+									<thead class="table-season__head">
+										<tr>
+											<th class="table-season__th table-season__th_nobold">Кол-во занятий</th>
+											<th class="table-season__th"> 12 месяцев</th>
+											<th class="table-season__th">6 месяцев</th>
+											<th class="table-season__th">3 месяца</th>
+											<th class="table-season__th">1 месяц</th>
+										</tr>
+									</thead>
+									<tbody class="table-season__body body-table">
+										<tr>
+											<td class="body-table__title">Индивидуальная,
+												полная без ограничения
+												в посещении / <span>8:00 – 23:00</span> </td>
+											<td class="body-table__item">18000 <br>
+												(+200 мин. солярия)</td>
+											<td class="body-table__item">12000</td>
+											<td class="body-table__item">7000</td>
+											<td class="body-table__item">2500</td>
+										</tr>
+										<tr>
+											<td class="body-table__title">Индивидуальная,
+												дневная / <span>8:00 – 17:00</span> </td>
+											<td class="body-table__item">—</td>
+											<td class="body-table__item">9500</td>
+											<td class="body-table__item">5500</td>
+											<td class="body-table__item">2000</td>
+										</tr>
+	
+									</tbody>
+								</table>
+							</div>
+							<div class="season-page__body">
+								<h2 class="season-page__subtitle title">Разовые тренировки</h2>
+								<div class="season-page__cards cards">
+									<article class="cards__item item-card">
+										<h3 class="item-card__title">Самостоятельные тренировки в тренажерном зале</h3>
+										<div class="item-card__info">
+											<div class="item-card__time">8:00 – 23:00</div>
+											<div class="item-card__icon-ibg">
+												<img src="img/icons/time.svg" alt="icon">
+											</div>
+										</div>
+										<div class="item-card__price">250₽</div>
+										<div class="item-card__text">1 тренировка</div>
+										<a href="#" class="item-card__btn btn">
+											<div class="btn__body">
+												<span>Узнать</span>
+											</div>
+										</a>
+									</article>
+									<article class="cards__item item-card">
+										<h3 class="item-card__title">Персональный тренинг
+											с инструктором</h3>
+										<div class="item-card__info">
+											<div class="item-card__time">8:00 – 23:00</div>
+											<div class="item-card__icon-ibg">
+												<img src="img/icons/time.svg" alt="icon">
+											</div>
+										</div>
+										<div class="item-card__price">700₽</div>
+										<div class="item-card__text">1 тренировка</div>
+										<a href="#" class="item-card__btn btn">
+											<div class="btn__body">
+												<span>Узнать</span>
+											</div>
+										</a>
+									</article>
+									<article class="cards__item item-card">
+										<h3 class="item-card__title">Зал групповых программ</h3>
+										<div class="item-card__info">
+											<div class="item-card__time">график занятий уточняйте у администратора</div>
+											<div class="item-card__icon-ibg">
+												<img src="img/icons/time.svg" alt="icon">
+											</div>
+										</div>
+										<div class="item-card__price">300₽</div>
+										<div class="item-card__text">1 тренировка</div>
+										<a href="#" class="item-card__btn btn">
+											<div class="btn__body">
+												<span>Узнать</span>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!--  -->
+					<section id="coach" class="page__coach coach-page">
+						<div class="coach-page__container">
+							<div class="coach-page__body">
+								<div class="coach-page__head">
+									<h2 class="coach-page__title title">Тренеры</h2>
+								</div>
+								<div class="coach-page__slider swiper">
+									<div class="coach-page__wrapper swiper-wrapper">
+										<div class="coach-page__slide swiper-slide">
+											<div class="swiper-slide__img">
+												<picture><source srcset="img/coach1.webp" type="image/webp"><img src="img/coach1.jpg" alt="img"></picture>
+											</div>
+											<h3 class="swiper-slide__title">Илья Панченко</h3>
+											<div class="swiper-slide__content">
+												<div class="swiper-slide__text">
+													Персональный тренер
+												</div>
+												<div class="swiper-slide__text">
+													Инструктор тренажерного зала
+												</div>
+												<div class="swiper-slide__text">
+													Опыт работы — 4 года
+												</div>
+											</div>
+										</div>
+										<div class="coach-page__slide swiper-slide">
+											<div class="swiper-slide__img">
+												<picture><source srcset="img/coach2.webp" type="image/webp"><img src="img/coach2.jpg" alt="img"></picture>
+											</div>
+											<h3 class="swiper-slide__title">Илья Панченко</h3>
+											<div class="swiper-slide__content">
+												<div class="swiper-slide__text">
+													Персональный тренер
+												</div>
+												<div class="swiper-slide__text">
+													Инструктор тренажерного зала
+												</div>
+												<div class="swiper-slide__text">
+													Опыт работы — 4 года
+												</div>
+											</div>
+										</div>
+										<div class="coach-page__slide swiper-slide">
+											<div class="swiper-slide__img">
+												<picture><source srcset="img/coach3.webp" type="image/webp"><img src="img/coach3.jpg" alt="img"></picture>
+											</div>
+											<h3 class="swiper-slide__title">Илья Панченко</h3>
+											<div class="swiper-slide__content">
+												<div class="swiper-slide__text">
+													Персональный тренер
+												</div>
+												<div class="swiper-slide__text">
+													Инструктор тренажерного зала
+												</div>
+												<div class="swiper-slide__text">
+													Опыт работы — 4 года
+												</div>
+											</div>
+										</div>
+										<div class="coach-page__slide swiper-slide">
+											<div class="swiper-slide__img">
+												<picture><source srcset="img/coach2.webp" type="image/webp"><img src="img/coach2.jpg" alt="img"></picture>
+											</div>
+											<h3 class="swiper-slide__title">Илья Панченко</h3>
+											<div class="swiper-slide__content">
+												<div class="swiper-slide__text">
+													Персональный тренер
+												</div>
+												<div class="swiper-slide__text">
+													Инструктор тренажерного зала
+												</div>
+												<div class="swiper-slide__text">
+													Опыт работы — 4 года
+												</div>
+											</div>
+										</div>
+										<div class="coach-page__slide swiper-slide">
+											<div class="swiper-slide__img">
+												<picture><source srcset="img/coach2.webp" type="image/webp"><img src="img/coach2.jpg" alt="img"></picture>
+											</div>
+											<h3 class="swiper-slide__title">Илья Панченко</h3>
+											<div class="swiper-slide__content">
+												<div class="swiper-slide__text">
+													Персональный тренер
+												</div>
+												<div class="swiper-slide__text">
+													Инструктор тренажерного зала
+												</div>
+												<div class="swiper-slide__text">
+													Опыт работы — 4 года
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="coach-page__btn">
+										<div class="swiper-button-prev">
+											<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.375 8.00005C23.375 7.78456 23.2894 7.5779 23.137 7.42553C22.9846 7.27315 22.778 7.18755 22.5625 7.18755H3.39886L8.51274 2.0753C8.58828 1.99976 8.6482 1.91007 8.68909 1.81137C8.72997 1.71267 8.75101 1.60688 8.75101 1.50005C8.75101 1.39322 8.72997 1.28743 8.68909 1.18873C8.6482 1.09003 8.58828 1.00034 8.51274 0.9248C8.43719 0.849257 8.34751 0.789333 8.24881 0.74845C8.15011 0.707566 8.04432 0.686523 7.93749 0.686523C7.83065 0.686523 7.72487 0.707566 7.62616 0.74845C7.52746 0.789333 7.43778 0.849257 7.36224 0.9248L0.862238 7.4248C0.786572 7.50027 0.72654 7.58994 0.68558 7.68865C0.644619 7.78736 0.623535 7.89318 0.623535 8.00005C0.623535 8.10692 0.644619 8.21274 0.68558 8.31145C0.72654 8.41017 0.786572 8.49983 0.862238 8.5753L7.36224 15.0753C7.43778 15.1508 7.52746 15.2108 7.62616 15.2517C7.72487 15.2925 7.83065 15.3136 7.93749 15.3136C8.04432 15.3136 8.15011 15.2925 8.24881 15.2517C8.34751 15.2108 8.43719 15.1508 8.51274 15.0753C8.58828 14.9998 8.6482 14.9101 8.68909 14.8114C8.72997 14.7127 8.75101 14.6069 8.75101 14.5001C8.75101 14.3932 8.72997 14.2874 8.68909 14.1887C8.6482 14.09 8.58828 14.0003 8.51274 13.9248L3.39886 8.81255H22.5625C22.778 8.81255 22.9846 8.72695 23.137 8.57458C23.2894 8.4222 23.375 8.21554 23.375 8.00005Z" fill="white" />
+											</svg>
+										</div>
+										<div class="swiper-button-next">
+											<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M0.625013 7.99995C0.625013 8.21544 0.710615 8.4221 0.862988 8.57447C1.01536 8.72685 1.22202 8.81245 1.43751 8.81245L20.6011 8.81245L15.4873 13.9247C15.4117 14.0002 15.3518 14.0899 15.3109 14.1886C15.27 14.2873 15.249 14.3931 15.249 14.5C15.249 14.6068 15.27 14.7126 15.3109 14.8113C15.3518 14.91 15.4117 14.9997 15.4873 15.0752C15.5628 15.1507 15.6525 15.2107 15.7512 15.2516C15.8499 15.2924 15.9557 15.3135 16.0625 15.3135C16.1693 15.3135 16.2751 15.2924 16.3738 15.2516C16.4725 15.2107 16.5622 15.1507 16.6378 15.0752L23.1378 8.5752C23.2134 8.49973 23.2735 8.41006 23.3144 8.31135C23.3554 8.21264 23.3765 8.10682 23.3765 7.99995C23.3765 7.89308 23.3554 7.78726 23.3144 7.68855C23.2735 7.58983 23.2134 7.50017 23.1378 7.4247L16.6378 0.924699C16.5622 0.849155 16.4725 0.789231 16.3738 0.748348C16.2751 0.707464 16.1693 0.686422 16.0625 0.686422C15.9557 0.686422 15.8499 0.707464 15.7512 0.748348C15.6525 0.789231 15.5628 0.849155 15.4873 0.924699C15.4117 1.00024 15.3518 1.08992 15.3109 1.18863C15.27 1.28733 15.249 1.39312 15.249 1.49995C15.249 1.60678 15.27 1.71257 15.3109 1.81127C15.3518 1.90997 15.4117 1.99966 15.4873 2.0752L20.6011 7.18745L1.43751 7.18745C1.22202 7.18745 1.01536 7.27305 0.862988 7.42542C0.710615 7.5778 0.625013 7.78446 0.625013 7.99995Z" fill="white" />
+											</svg>
+	
+										</div>
+									</div>
+									<div class="coach-page__scrollbar swiper-scrollbar"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!--  -->
+					<section id="question" class="page__question question-page">
+						<div class="question-page__container question-page__container_md">
+							<div class="question-page__body">
+								<form data-dev action="#" class="question-page__form form-question">
+									<h2 class="form-question__title title">Остались вопросы?</h2>
+									<div class="form-question__text">
+										Оставьте Ваш номер телефона<br>
+										и мы <span>обязательно с Вами свяжемся</span>
+									</div>
+									<div class="form-question__body">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите имя" class="form-question__input input">
+										<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Введите телефон" class="form-question__input input">
+										<button type="submit" class="form-question__btn btn">
+											<div class="btn__body">
+												<span>Получить консультацию</span>
+											</div>
+										</button>
+										<div class="form-question__politic">Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<picture><source srcset="img/question-bg.webp" type="image/webp"><img src="img/question-bg.jpg" class="question-page__bg" alt="bg"></picture>
+					</section>
+					<!--  -->
+					<section id="contacts" class="page__contacts contacts-page">
+						<div class="contacts-page__container contacts-page__container_sm">
+							<div class="contacts-page__info info-contacts">
+								<h2 class="info-contacts__title title">Контакты</h2>
+								<address class="info-contacts__body">
+									<div class="info-contacts__address">г. Орехово-Зуево, ул. Ленина 84</div>
+									<div class="info-contacts__hours">Ежедневно с 8:00 до 23:00</div>
+									<div class="info-contacts__phone">
+										<a href="tel:+74964161916">+7 (496) 416-19-16,</a><br>
+										<a href="tel:+79258812170">+7 (925) 881-21-70</a>
+									</div>
+									<div class="info-contacts__text">Подписывайтесь на наши соц.сети
+									</div>
+									<ul class="info-contacts__list">
+										<li class="info-contacts__item">
+											<a href="#" class="info-contacts__link">
+												<img src="img/icons/inst-contacts.svg" alt="inst">
+											</a>
+										</li>
+										<li class="info-contacts__item">
+											<a href="#" class="info-contacts__link">
+												<img src="img/icons/vk-contacts.svg" alt="inst">
+											</a>
+										</li>
+									</ul>
+								</address>
+							</div>
+						</div>
+						<div class="contacts-page__map">
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A005be08a5ff6c745c0ecebfc37300bc162e9b27c01eebb1e339380763f021513&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true myMap.behaviors.disable(&_v=20230220082631'scrollZoom');"></script>
+						</div>
+					</section>
+				</main>
+				<footer class="footer">
+					<div class="footer__container">
+						<div class="footer__logo logo-footer">
+							<a href="#" class="logo-footer__logo">
+								<picture><source srcset="img/logo-header.webp" type="image/webp"><img src="img/logo-header.png" alt="Логотип пантеон"></picture>
+							</a>
+							<div data-da=".footer__body, 768" class="logo-footer__info">
+								<span>© Все права защищены</span>
+								<span>Орехово-Зуево, 2013-2022</span>
+							</div>
+						</div>
+						<div class="footer__body">
+							<div class="footer__menu menu">
+								<nav class="menu__body menu__body_footer">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Тренеры</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Абонементы</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Галерея</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Абонемент по времени</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Абонементы</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Разовые тренировки</a></li>
+									</ul>
+								</nav>
+								<button type="button" class="icon-menu menu__footer"><span></span></button>
+							</div>
+							<div data-da=".footer__contacts, 992" class="footer__social social-footer">
+								Наши соц.сети
+								<ul class="social-footer__list">
+									<li class="social-footer__item">
+										<a href="#" class="social-footer__link">
+											<img src="img/icons/inst.svg" alt="inst">
+										</a>
+									</li>
+									<li class="social-footer__item">
+										<a href="#" class="social-footer__link">
+											<img src="img/icons/vk.svg" alt="vk">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__contacts contacts-footer">
+								<div class="contacts-footer__address">г. Орехово-Зуево, ул. Ленина 84</div>
+								<div class="contacts-footer__hours">Ежедневно с 8:00 до 23:00</div>
+								<div class="contacts-footer__phone">
+									<a href="tel:+74964161916">+7 (496) 416-19-16,</a>
+									<a href="tel:+79258812170">+7 (925) 881-21-70</a>
+								</div>
+								<div class="contacts-footer__politic">
+									Политика конфиденциальности
+								</div>
+	
+							</div>
+	
+						</div>
+					</div>
+				</footer>
+			</div>
 		</div>
+		<script src="js/app.min.js?_v=20230220082631"></script>
 </body>
 </html>
