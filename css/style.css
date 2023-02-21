@@ -171,9 +171,9 @@ body {
 
 .btn {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -289,7 +289,9 @@ body {
   /* .header__phone */
 }
 
-
+.header__contacts {
+  padding-right: 15px;
+}
 
 .header__phone {
   -webkit-transition: color 0.3s ease;
@@ -396,6 +398,7 @@ body {
 
 .icon-menu {
   display: none;
+  margin-right: 15px;
 }
 
 .footer {
@@ -1690,6 +1693,10 @@ body {
           align-items: center;
 }
 
+.info-contacts__link.social__link path {
+  fill: #F7931E;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -2514,14 +2521,65 @@ body {
     color: #F7931E;
   }
 
+  .footer .menu__link:hover {
+    text-decoration: underline;
+  }
+
+  .contacts-footer__phone a:hover {
+    text-decoration: underline;
+  }
+
   .body-main__btn:hover::before {
     -webkit-transform: skew(-20deg) translate(0px, 0px);
         -ms-transform: skew(-20deg) translate(0px, 0px);
             transform: skew(-20deg) translate(0px, 0px);
   }
 
+  .social__link:hover path {
+    -webkit-transition: fill 0.3s ease;
+    -o-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+    fill: #F7931E;
+  }
+
   .item-card__btn:hover .btn__body {
     background-color: #F7931E;
     color: #FFFFFF;
+  }
+
+  .body-about__btn:hover .btn__body {
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+    border-color: #F7931E;
+  }
+
+  .body-about__btn:hover .btn__body span {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    color: #F7931E;
+  }
+
+  .form-question__btn:hover .btn__body {
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+    border-color: #F7931E;
+  }
+
+  .form-question__btn:hover .btn__body span {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    color: #F7931E;
+  }
+
+  .info-contacts__phone a:hover {
+    text-decoration: underline;
+  }
+
+  .info-contacts__link.social__link:hover path {
+    fill: #FFFFFF;
   }
 }
